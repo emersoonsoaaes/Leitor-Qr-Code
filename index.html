@@ -7,35 +7,41 @@
     <link rel="stylesheet" href="style.css" />
     <title>Gerador Qr Code | EmersonProg</title>
   </head>
+
   <body>
     <section>
       <div class="row">
         <input type="color" class="light" value="#ffffff" />
         <input type="color" class="dark" />
-        <select class="sezes">
-          <option value="100">100x100</option>
-          <option value="200">200x200</option>
-          <option value="300">300x300</option>
-          <option selected value="400">400x400</option>
-          <option value="500">500x500</option>
-          <option value="600">600x600</option>
-          <option value="700">700x700</option>
-          <option value="800">800x800</option>
-          <option value="900">900x900</option>
-          <option value="1000">1000x1000</option>
+        <select class="sizes">
+          <option value="100">100×100</option>
+          <option value="200">200×200</option>
+          <option value="300">300×300</option>
+          <option selected value="400">400×400</option>
+          <option value="500">500×500</option>
+          <option value="600">600×600</option>
+          <option value="700">700×700</option>
+          <option value="800">800×800</option>
+          <option value="900">900×900</option>
+          <option value="1000">1000×1000</option>
         </select>
       </div>
       <input type="text" class="qr-text" placeholder="Enter QR Text" />
       <div id="qr-code"></div>
-      <div class="action-container"></div>
-      <a href="#" class="download btn" download="QRCode">
-        <span>download</span>
-        <img src="download.svg" alt="" />
-      </a>
-      <button class="btn share-btn">
-        <span>Share</span>
-        <img src="share.svg" alt="" />
-      </button>
+      <div class="action-container">
+        <a href="#" class="download btn" download="QRCode">
+          <span>Download</span>
+          <img
+            src="https://img.icons8.com/pastel-glyph/64/FFFFFF/download-from-cloud--v2.png"
+          />
+        </a>
+        <button class="btn share-btn">
+          <span>Share</span>
+          <img
+            src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/FFFFFF/external-share-business-kiranshastry-solid-kiranshastry.png"
+          />
+        </button>
+      </div>
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
